@@ -150,6 +150,13 @@
             font-weight: 600;
             border: none;
             outline: none;
+            border: 1px solid white;
+            transition: 0.25s;
+            &:hover{
+                color: $text-red;
+                background-color: white;
+                border-color: $text-red;
+            }
         }
     }
 
