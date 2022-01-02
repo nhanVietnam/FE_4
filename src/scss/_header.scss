@@ -1,0 +1,92 @@
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    transition: all 0.25s;
+    .container{
+        max-width: 1310px;
+        padding: 0 20px;
+    }
+
+    &.scroll{
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        height: 80px;
+        .header__wrapper{
+            margin-top: 25px;
+        }
+        .header__center{
+            img{
+                transform: scale(0.8);
+            }
+        }
+    }
+
+    &__wrapper{
+        margin-top: 40px;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        color: white;
+        z-index: 9999999999;
+        img{
+            width: 30px;
+            height: 18px;
+            margin-right: 14px;
+        }
+        h5{
+            font-size: 1.6rem;
+            font-weight: 400;
+
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        a{
+            margin: 0 14px;
+        }
+    }
+    
+    &__language{
+        display: flex;
+        h5{
+            padding: 0 8px;
+            font-size: 1.4rem;
+            font-weight: 300;
+            border-right: 1px solid white;
+            &:last-child{
+                border: none;
+                padding-right: 0;
+            }
+        }
+    }
+    &__center{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        img{
+            width: 100px;
+            height: 52px;
+            transition: 0.25s;
+        }
+    }
+
+    &__navigation{
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: 0.25s;
+    }
+}

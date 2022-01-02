@@ -1,0 +1,212 @@
+.introduce{
+    padding-top: 58px;
+    padding-bottom: 32px;
+    &__top{
+        display: flex;
+        &__left{
+            min-width: 183px;
+            min-height: 390px;
+            background-color:$bg-box-aside;
+            color: $text-white;
+            writing-mode:vertical-rl;
+            h3{
+                font-size: 4.6rem;
+                font-weight: 400;
+                transform: rotate(180deg);
+                text-transform: uppercase;
+                text-align: end;
+                text-transform: uppercase;
+                padding-left: 26px;
+                padding-bottom: 36px;
+                font-family: "UTM Alter Gothic",sans-serif;
+            }
+        }
+        &__right{
+            color: $text-black;
+            margin-left: 50px;
+        }
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+    &__mission{
+        font-size: 4rem;
+        color: $text-red;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: "UTM Alter Gothic",sans-serif;
+    }
+    &__describer{
+        width: 640px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    &__button{
+        text-transform: uppercase;
+        display: inline-flex;
+        padding: 15px;
+        border: 1px solid $bg-box-aside;
+        color: $text-black;
+        border-radius: 4px;
+        img{
+            width: 18px;
+            margin-left: 16px;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        padding-left: 100px;
+        margin-top: -110px;
+        &__left{
+            width: 776px;
+            height: 403px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__right{
+            flex: 1;
+            padding-top: 42px;
+            padding-left: 42px;
+        }
+        &__item{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ebebeb;
+            margin-bottom: 25px;
+            &:last-child{
+                margin: 0;
+                border: 0;
+            }
+            &__title{
+                font-size: 4rem;
+                font-family: $second-font;
+                color: $text-red;
+                line-height: 26px;
+            }
+            &__describer{
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .introduce{
+        &__top{
+            &__left{
+                min-width: 151px;
+                min-height: 387px;
+                h3{
+                    padding-left: 1px;
+                }
+            }
+        }
+
+        &__bottom{
+            margin-top: -86px;
+            &__left{
+                width: 641px;
+                height: 360px;
+            }
+            &__right{
+                padding-top: 4px;
+            }
+        }
+        &__describer{
+            width: 540px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .introduce{
+        &__top{
+            &__left{
+                min-width: 64px;
+            }
+        }
+        &__bottom{
+            padding-left: 30px;
+            &__left{
+                width: 615px;
+            }
+        }
+        &__describer{
+            width: 533px;
+        }
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .introduce{
+        &__top{
+            &__right{
+                margin-left: 20px;
+            }
+        }
+        &__bottom__left{
+            width: 510px;
+            height: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .introduce{
+        &__bottom{
+            flex-direction: column;
+            gap: 40px;
+            &__left{
+                width: 90%;
+            }
+            &__right{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 40px;
+                padding: 0;
+            }
+            &__item{
+                text-align: center;
+                border: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 638px) {
+    .introduce{
+        &__top{
+            &__left{
+                display: none;
+            }
+            &__right{
+                margin-left: 0;
+                margin: 0 auto;
+            }
+        }
+        &__describer{
+            width: 100%;
+        }
+        &__bottom{
+            padding: 0 15px;
+            margin-top: 30px;
+            &__left{
+                width: 100%;
+            }
+        }
+    }
+}

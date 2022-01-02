@@ -1,0 +1,63 @@
+$text-black: #333;
+$text-white: #fff;
+$text-red: #e82328;
+$text-gray: #d5d5d8;
+$bg-title-red: #e82328;
+$bg-box-aside: #e82328;
+$bg-gray: #f9f9f9;
+$bg-blue-dark: #2c2b3b;
+$bg-input-blue-dark: #22222d;
+$border-button-red: #e82328;
+$second-font: "UTM Alter Gothic",sans-serif;
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    max-width: 100%;
+    margin: 0 0 0 0;
+}
+ @media screen and (min-width: 1200px) {
+     .container{
+         max-width: 1170px;
+         padding: 0;
+         margin: 0;
+         margin-left: auto;
+         margin-right: auto;;
+     }
+ }
+ @media screen and (max-width: 991px) {
+   .container{
+     max-width: 860px;
+   }
+ }
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
